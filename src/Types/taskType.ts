@@ -3,6 +3,7 @@ export interface Tasks {
     name: string;
     dueDate: string;
     completed: boolean;
+    editable: boolean;
 }
 
 export type Action =
@@ -10,3 +11,4 @@ export type Action =
     | { type: 'DELETE'; id: number }
     | { type: 'UPDATE'; id: number; newTask: string }
     | { type: 'TOGGLE'; id: number }
+    | { type: 'EDIT'; id: number }

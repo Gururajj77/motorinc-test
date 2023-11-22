@@ -3,11 +3,12 @@ import "../styles/taskmanager.css";
 import { Tasks } from "../Types/taskType";
 import { useReducer, useRef } from "react";
 import { taskReducer } from "../functions/customFunctions";
+import { customData } from "../assets/customData";
 
 const TaskManager = () => {
   let taskNameRef = useRef<HTMLInputElement>(null);
   let dueDateRef = useRef<HTMLInputElement>(null);
-  const taskList: Tasks[] = [];
+  const taskList: Tasks[] = customData;
 
   const [state, dispatch] = useReducer(taskReducer, taskList);
 

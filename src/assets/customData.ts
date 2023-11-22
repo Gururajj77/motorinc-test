@@ -1,14 +1,16 @@
 export const customData = [
     {
-        id: Date.now(),
+        id: 22,
         name: "Coding round",
         dueDate: "21/11/2023",
         completed: true,
+        editable: false
     },
     {
-        id: Date.now(),
+        id: 21,
         name: "selection round",
         dueDate: "21/11/2023",
         completed: false,
+        editable: false
     },
 ]
