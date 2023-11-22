@@ -1,0 +1,20 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 676px) {
+  .task-form {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+  }
+}
+
+.main-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
